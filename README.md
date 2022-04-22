@@ -8,4 +8,4 @@ You enter your solution in the ``Executor.py`` file, there must be a function ca
 
 You could add puzzles through the ``puzzles.json`` file, create a dictionary that contains 3 keys: name, statement and testcases. The testcases is a 2D array where each array is a seperate testcase, each array contains an input and output where the first value is the input and the second is the expected output will be used to test the solution and determine the score (didn't add validators here, because they are unnecessary), the name will be used as an identifier to the puzzle if the user wants to pick the puzzle not randomly and the statement will be used as the instructions to the puzzle.
 
-Required modules: ``colorama``
+**Required modules:** ``colorama``
