@@ -46,6 +46,7 @@ class Puzzle:
                         break
                     else:
                         input("Continue")
+                        os.system("cls")
                         continue
 
             print(f"SCORE: {round(self.successful/len(self.test_cases)*100, 2)}")   
