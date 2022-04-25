@@ -5,9 +5,10 @@ import random
 from colorama import Fore, Style
 
 class Puzzle:
-    def __init__(self, statement, name):
+    def __init__(self, statement, name, constraints):
         self.statement = statement
         self.name = name
+        self.constrains = constraints
 
         self.test_cases = []
 
@@ -24,6 +25,8 @@ class Puzzle:
                     sample = random.choice(self.test_cases)
 
                     print(f"SAMPLE INPUT:\n{sample[0]}\nSAMPLE OUTPUT:\n{sample[1]}\n")
+                    print(f"Constraints: {self.constrains}")
+
                     choice = input("Submit (s) or test (don't type anything)? ")
 
                     os.system("cls")
@@ -74,7 +77,7 @@ while True:
         else:
             puzz = random.choice(json.loads(puzz.read()))
         
-        puzzle = Puzzle(puzz["statement"], puzz["name"])
+        puzzle = Puzzle(puzz["statement"], puzz["name"], puzz["constraints"])
         
         for j in puzz["test_cases"]:
             puzzle.TestCase(j[0],j[1])
