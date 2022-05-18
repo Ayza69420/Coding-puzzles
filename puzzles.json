@@ -1,7 +1,7 @@
 [{
     "name": "linear pattern",
     "statement": "You are given a list of numbers n, you have to find out whether it's going by a linear pattern or not and output the next\nnumber in the sequence according to the pattern, followed by a space and the pattern. or, No pattern found.",
-    "test_cases": [["5 6 7", "8 1"], ["2 4 6 8", "10 2"], ["-1 0 1", "2 1"]],
+    "test_cases": [["5 6 7", "8 1"], ["2 4 6 8", "10 2"], ["-1 0 1", "2 1"], ["1 3 4 32 1 5 2", "No pattern found"], ["3 2 5 12 63", "No pattern found"]],
     "constraints": "\n1 < len(n) < 100\nn only contains whole numbers\n"
 },
 {
