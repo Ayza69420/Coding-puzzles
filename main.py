@@ -8,7 +8,7 @@ class Puzzle:
     def __init__(self, statement, name, constraints):
         self.statement = statement
         self.name = name
-        self.constrains = constraints
+        self.constraints = constraints
 
         self.test_cases = []
 
@@ -25,7 +25,7 @@ class Puzzle:
                     sample = random.choice(self.test_cases)
 
                     print(f"SAMPLE INPUT:\n{sample[0]}\nSAMPLE OUTPUT:\n{sample[1]}\n")
-                    print(f"Constraints: {self.constrains}")
+                    print(f"Constraints: {self.constraints if self.constraints else None}")
 
                     choice = input("Submit (s) or test (don't type anything)? ")
 
