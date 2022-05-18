@@ -2,18 +2,18 @@
     "name": "linear pattern",
     "statement": "You are given a list of numbers n, you have to find out whether it's going by a linear pattern or not and output the next\nnumber in the sequence according to the pattern, followed by a space and the pattern. or, No pattern found.",
     "test_cases": [["5 6 7", "8 1"], ["2 4 6 8", "10 2"], ["-1 0 1", "2 1"]],
-    "constraints": false
+    "constraints": "1 < len(n) < 100\nn only contains whole numbers\n"
 },
 {
     "name": "time conversion",
     "statement": " You are given the current time in 24-hour format which is held in the time variable, your task is to convert it into 12-hour format if it is valid, otherwise output \"INVALID\".",
     "test_cases": [["23:38", "11:38 PM"], ["23:60", "INVALID"], ["09:38", "9:38 AM"], ["11:00", "11:00 AM"], ["26:61", "INVALID"], ["00:01", "12:01 AM"], ["12:00", "12:00 PM"], ["99:99", "INVALID"]],
-    "constraints": false
+    "constraints": "HH >= 0\nMM >= 0\n"
 },
 {
     "name": "array classifying",
     "statement": "You are given a string n, you have to code a solution that'll determine the type of an array n represents. (1D array, 2D array, 3D array, None).",
-    "test_cases": [["[5]","1D array"], ["[[1,2,3],[1,2,3]]", "2D array"],["[[[3,2,1]],[[1,2,3]]]","3D array"], ["\"Hello, world!\"","None"]],
+    "test_cases": [["[5]","1D array"], ["[[1,2,3],[1,2,3]]", "2D array"],["[[[3,2,1]],[[1,2,3]]]","3D array"], ["\"Hello, world!\"","None"], ["\"['Hello world!']\""]],
     "constraints": "3 <= len(n) < 30"
 }
 ]
