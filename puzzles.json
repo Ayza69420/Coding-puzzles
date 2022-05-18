@@ -14,6 +14,6 @@
     "name": "array classifying",
     "statement": "You are given a string n, you have to code a solution that'll determine the type of an array n represents. (1D array, 2D array, 3D array, None).",
     "test_cases": [["[5]","1D array"], ["[[1,2,3],[1,2,3]]", "2D array"],["[[[3,2,1]],[[1,2,3]]]","3D array"], ["\"Hello, world!\"","None"], ["\"['Hello world!']\""]],
-    "constraints": "3 <= len(n) < 30"
+    "constraints": "3 <= len(n) < 30\n"
 }
 ]
