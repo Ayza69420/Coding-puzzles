@@ -4,6 +4,8 @@ import random
 
 from colorama import Fore, Style
 
+folder, file = os.path.split(os.path.realpath(__file__))
+
 class Puzzle:
     def __init__(self, statement, name, constraints):
         self.statement = statement
@@ -67,13 +69,17 @@ class Puzzle:
 
 
 while True:
-    with open("./puzzles.json", "r") as puzz:
+    with open(f"{folder}/puzzles.json", "r") as puzz:
         choice = input("Random puzzle (don't type anything) or pick by name: ")
 
         if choice:
             for k in json.loads(puzz.read()):
                 if k["name"] == choice:
                     puzz = k
+                    break
+            else:
+                print("Invalid puzzle.")
+                quit()
         else:
             puzz = random.choice(json.loads(puzz.read()))
         
